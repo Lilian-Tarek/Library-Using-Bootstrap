@@ -1,0 +1,389 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Lobster&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Patua+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Sniglet:wght@400;800&display=swap');
+*
+{
+    box-sizing: border-box;
+}
+header,
+section
+{
+    overflow-x: hidden;
+}
+:root {
+  --Sniglet-font: "Sniglet", cursive;
+  --Rubik: "Rubik", cursive;
+  --Patua: "Patua One", cursive;
+  --Lobster: "lobster", cursive;
+  --light-black: #2e2c2caf;
+  --bggradient: linear-gradient(to bottom, #dd2476, #ff512f);
+  --light-gray: rgba(255, 255, 255, 0.877);
+}
+
+/* start header */
+header a {
+  font-family: var(--Sniglet-font);
+  font-size: 0.9em;
+  color: whitesmoke !important;
+}
+
+header
+{
+  background:#dd2476;
+  background: var(--bggradient);
+}
+.dropdown-content
+{
+  display: none;
+  position: absolute;
+  background: white;
+  min-width: 160px;
+  box-shadow: 0px 2px 15px 0px rgba(0, 0,0,0.2);
+  z-index: 1;
+}
+.navbar button
+{
+  margin-right: 8rem;
+}
+.navbar-brand span
+{
+  top: 30%;
+}
+.dropdown-content a
+{
+  color: black !important;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content a:hover
+{
+  background-color:#ddd;
+}
+.dropdown:hover .dropdown-content
+{
+  display: block;
+}
+.stickey
+{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, .815);
+  z-index: 99999;
+  transition: all 1.5s ease;
+  pointer-events: auto;
+}
+body {
+  position: relative;
+}
+
+@media(min-width:992px)
+{
+header .nav-item:last-child
+{
+  padding-right: 10.5rem !important;
+  padding-inline-end: 10.5rem !important; 
+}
+}
+header .nav-item
+{
+  padding: .9em;
+}
+header .navbar-brand
+{
+  padding-left: 8rem;
+}
+header .nav-link:hover
+{
+  color: black !important;
+}header .row .col-md-7
+{
+  padding: 22vmin 1vmin;
+  padding-bottom: 35vmin;
+  font-family: var(--Rubik);
+}
+@media(max-width:767px)
+{
+header .row .col-md-7
+{
+    padding-bottom: 5vmin;
+}
+}
+header .row .col-md-5
+{
+  padding: 4.2vmin 1vmin;
+}
+header img
+{
+  width: 90%;
+}
+header h6
+{
+  padding: 1vmin;
+  letter-spacing: 4px;
+}
+header h1
+{
+  font-size: 8vmin;
+  padding: .1em 0em;
+  font-family: var(--Lobster);
+}
+header .row .col-md-7 p
+{
+  padding: 1vmin 5vmin;
+}
+header .row .col-md-7 button
+{
+  border-radius: 30px;
+}
+@media (max-width:600px) {
+  header .navbar-brand
+  {
+    padding-left:0px ;
+  }
+  .navbar button
+  {
+    margin-right: 0px;
+  }
+}
+/* end header */
+/* start sec1 */
+.sec1
+{
+  padding: 20vmin 0;
+}
+.sec1 img
+{
+  width: 80%;
+  opacity: .8;
+  border-radius: .2em;
+}
+.sec1 .row .panel
+{
+  top: 7vmin;
+  left: -18vmin;
+  border-radius: 3px;
+  padding: 13vmin 5vmin 20vmin 10vmin;
+  box-shadow: 0px 25px 42px rgba(0, 0, 0, 0.2);
+font-family: var(--Rubik);
+z-index: 1;
+}
+.sec1 .row .panel p
+{
+  color: rgba(0, 0, 0, 0.5);
+}
+@media(max-width:992px)
+{
+  .sec1 .row
+  {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+.sec1 .panel
+{
+position: relative !important;
+left: 0 !important;
+text-align: center !important;
+padding-left:5vmin !important;
+} 
+
+}
+/* end sec1 */
+/* start sec2 */
+.cover
+{
+height:70vh;
+background: url(../images/pexels-photo-452738.jpeg);
+background-position: -24rem -19rem;
+position: relative;
+}
+.cover .content
+{
+  background-color: rgba(0, 0, 0, 0.7);
+  min-height:70vmin;
+  width: 100%;
+  padding-top: 19vmin;
+   top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.cover h1
+{
+font-family: var(--Lobster);
+color:#ff512f;
+}
+.sec2 .numbers .box
+{
+  position: relative;
+  z-index: 1;
+  width: 17rem;
+  padding-top: 3.5vmin;
+  border-radius: .5rem;
+  box-shadow: 0px 7px 10px 0px rgba(255, 0, 0,0.349);
+margin: 1rem;
+}
+.sec2 .numbers
+{
+  margin-top: -15vmin;
+}
+.sec2 .numbers h1
+{
+  font-size: 4rem;
+  color: tomato;
+}
+.sec2 .numbers p
+{
+font-family: var(--Patua);
+
+}
+/* end sec2 */
+/* start purchase */
+.purchase>h1
+{
+color:#ff512f;
+font-family: var(--Lobster);
+}
+.purchase>p
+{
+color:var(--light-black);
+font-size: 3vmin;
+}
+.purchase .card
+{
+  width: 22rem;
+margin: 3vmin;
+}
+.purchase .card div
+{
+  padding: 0;
+  margin: 0;
+}
+.purchase .card h5
+{
+  background-color: rgba(208, 241, 241,.199);
+}
+.purchase .card .card-text
+{
+  color: var(--light-black);
+  padding: 2.5rem 3rem;
+}
+.purchase .pricing
+{
+  background-color: rgba(208, 241, 241,.199);
+  border-top-right-radius: 170px;
+  border-top-left-radius: 170px;
+}
+/* end  purchase */
+/* start sec3 */
+.sec3
+{
+  min-height: 70vmin;
+  background: var(--bggradient);
+}
+.sec3 h1
+{
+  font-family: var(--Lobster);
+  color: whitesmoke;
+}
+.sec3 .row>p
+{
+  color: var(--light-gray);
+}
+.sec3 .desktop,
+.sec3 .mobile
+{
+border-radius: 3em;
+padding: 2vmin 4.5vmin;
+    margin: 1em;
+}
+.sec3 .desktop p,
+.sec3 .mobile p
+{
+  font-size: 2vmin;
+}
+@media (max-width:767px) {
+  .sec3 .col-md-6
+  {
+    text-align: center !important;
+    padding: 20px 0;
+
+  }
+}
+/* end sec3 */
+/* start team */
+.team-sec h1
+{
+  color:#ff512f;
+  font-family: var(--Lobster);
+}
+.team-sec .card
+{
+  width:100%;
+  height: 500px;
+}
+.team-sec .card img
+{
+height: 10rem;
+width: 9rem;
+}
+.team-sec .card .card-text
+{
+  padding: .5rem;
+}
+.team-sec .card a
+{
+  font-size: 1.5em;
+  color: #dd2476 !important;
+}
+.team-sec .carousel
+{
+  width: 22rem;
+}
+.border-radius
+{
+  border-radius: 340px;
+  width: 60%;
+}
+/* end team */
+/* start footer */
+footer
+{
+  background:rgba(0, 0, 0, .815);
+  overflow-x: hidden;
+  padding: 5rem 2rem;
+}
+footer p span
+{
+  color: #ff512f;
+}
+footer input{
+  border: none !important;
+}
+footer input::placeholder{
+  color: white !important;
+}
+footer .input-group-text
+{
+  background: var(--bggradient);
+}
+@media(max-width:767px)
+{footer
+  {
+    text-align: center;
+  }
+footer .icons
+{
+  justify-content: center;
+}
+footer form .col
+{display: flex;
+  justify-content: center;
+  padding-right:0px ;
+}
+}
+
+/* end footer */
